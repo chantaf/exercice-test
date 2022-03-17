@@ -1,22 +1,19 @@
-*{
-    margin:0;
-    padding: 0;
-    outline: 0;
-    font-size:small;
+  
+  /**/
+  *{
+    font-size:small; 
    }
  
+   /*table users*/
    table{
     position: absolute;
-    /* z-index: 2; */
     left: 50%;
     top: 40%;
     transform: translate(-50%,-50%);
     width: 80%; 
     border-collapse: collapse;
-    /* border-spacing: 0; */
     box-shadow: 0 0 4px rgba(107, 104, 104, 0.7);
     border-radius: 8px 8px 6px 6px;
-    /* overflow: hidden; */
    
    }
    td , th{
@@ -24,183 +21,120 @@
     text-align: center;
    }
    th{
-  /*  background-color: #ba68c8;
-    color: #fafafa;
-    font-family: 'Open Sans',Sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;*/
-    /* font-size:90% !important; */
-    /* border-bottom: 1px solid #F1F1F2; */
    width: 15%;
    
    }
    tr{
-    /* width: 100%; */
-    /* background-color: #fafafa; */
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid #e7e7f0;
    }
-   /* tr:nth-child(even){
-    background-color: #eeeeee;
-   } */
 
+ 
+   /*icon supprimer user*/
    #icontrash{
        width: 50%;
    }
 
+   /*style div de button ajouter user*/
    .divjouter{
     height: 60px;
-    position: absolute;
-    left: 50%;
-    top: 78%;
-    transform: translate(-50%,-50%);
-    width: 80%; 
-    border-collapse: collapse;
-    /* border-spacing: 0; */
+    margin-top: 30%;
+    margin-left: 130px;
+    width: 81%; 
     box-shadow: 0 0 4px rgba(107, 104, 104, 0.7);
     border-radius: 8px 8px 6px 6px;
-   
-    /* overflow: hidden; */
+  
    }
 
+   /*style button ajouter user*/
    .btnajouter{
     border: none;
     background-color: #FFAA0A;
     color:#887249;
     height: 35px;
     width: 175px;
-    border-radius: 6px 6px 6px 6px;
-    position: absolute;
-    left: 80%;
-    top:22%;
+    border-radius: 6px;
+    margin-top: 1%;
+    margin-left: 83%;
+    cursor: pointer;
    }
 
-   .btnenregistrer{
-    border: none;
-    background-color: #FFAA0A;
-    color:#887249;
-    height: 35px;
-    width: 150px;
-    border-radius: 6px 6px 6px 6px;
-    position: relative;
-    left: 40%; 
-   }
-
-   .supprimer{
-       text-decoration: none;
-       background-color: #FFFFFF;
-       border: none;
-   }
-
-
-
-
-   /* :root {
-    --modal-duration: 1s;
-    --modal-color: #428bca;
-  }
-   */
-   /* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    font-size: 17px;
-    line-height: 1.6;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  } 
-   */
-  /* .button {
-    background: #428bca;
-    padding: 1em 2em;
-    color: #fff;
-    border: 0;
+  /*style span status de la table user*/
+  .spanstatus{
     border-radius: 5px;
-    cursor: pointer;
+    color: #FFFFFF;
+    padding: 5px 10px;
   }
-  
-  .button:hover {
-    background: #3876ac;
-  } */
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    margin: 10% auto;
-    width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-  
-  /* .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
-  }
-   */
-   .divinput{
-       display: block !important;
-   }
-   .divinput input,select{
-       font-size: 20px;
-       border-radius: 6px 6px 6px 6px;
-       color:#919191;
-       
-   }
-  .modal-header {
-    background: white;
-    padding: 15px;
-    color:black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .modal-body {
-    padding: 10px 20px;
-    background: white;
-    height: 200px;
 
-  }
-  
-  .modal-footer {
-    background: white;
-    padding: 10px;
-    color: black;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .close {
-    color: black;
-    float: right;
-    font-size: 30px;
-    color: #fff;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
+  /* display non pour modale */
+.invisible {
+  display: none;
+  backdrop-filter: blur(10px);
+}
+
+/* blur background pour modale */
+.blur {
+  filter: blur(10px);
+}
+
+/* style de modal  */
+.div {
+  margin: 0 10vw;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 15%;
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+  border-radius: 13px;
+  color:#BEBEBE;
+}
+
+.div input,select{
+  width: 20vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px rgb(224, 224, 224);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.div2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7vw;
+  width: 100%;
+  padding: 10px 0;
+}
+.btnenregistrer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.btnenregistrer button {
+  background-color: #fdb64d;
+  border-style: none;
+  padding: 13px 60px;
+  margin-right: 2vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px -2px rgba(75, 72, 72, 0.76);
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+/*titre modal ajouter utilisateur*/
+.titremodal{
+  color: #000000;
+  font-size: 40px;
+}
+

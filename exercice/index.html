@@ -11,8 +11,8 @@
 <body>
 
      
-
-    <table >
+  <section class="tableuser">
+    <table id="table">
 
         <thead>
             <tr>
@@ -31,196 +31,65 @@
         <tbody id="tableuser">
 
         </tbody>
-        <!-- </tr>
-       
-         <tr>
-       
-        <td>1</td>
-       
-        <td>Jean</td>
-       
-        <td>leBon</td>
-       
-        <td>1368</td>
-       
-        <td>18 Nov 1962</td>
-       
-        <td>5000$</td>
-        <td>18 Nov 1962</td>
-       
-        <td><img id="icontrash" src="./icon/trash.png"></td>
-       
-        </tr>
-       
-        <tr>
-       
-        <td>2</td>
-       
-        <td>jack</td>
-       
-        <td>Duppont</td>
-       
-        <td>1368</td>
-       
-        <td>18 Dec 1962</td>
-       
-        <td></td>
-       
-        </tr>
-       
-        <tr>
-       
-        <td>3</td>
-       
-        <td>Jean</td>
-       
-        <td>leBon</td>
-       
-        <td>1368</td>
-       
-        <td>18 Nov 1972</td>
-       
-        <td>4200$</td>
-       
-        </tr>
-       
-        <tr>
-       
-        <td>4</td>
-       
-        <td>Nadia</td>
-       
-        <td>leBon</td>
-       
-        <td>1368</td>
-       
-        <td>18 Mar 1982</td>
-       
-        <td>6300$</td>
-       
-        </tr>
-       
-        <tr>
-       
-        <td>5</td>
-       
-        <td>Nadia</td>
-       
-        <td>leBon</td>
-       
-        <td>1368</td>
-       
-        <td>18 Mar 1982</td>
-       
-        <td>6300$</td>
-       
-        </tr>
-       
-        <tr>
-       
-        <td>6</td>
-       
-        <td>Nadia</td>
-       
-        <td>leBon</td>
-       
-        <td>1368</td>
-       
-        <td>18 Mar 1982</td>
-       
-        <td>6300$</td>
-       
-        </tr>
-        <tr>
-       
-            <td>6</td>
-           
-            <td>Nadia</td>
-           
-            <td>leBon</td>
-           
-            <td>1368</td>
-           
-            <td>18 Mar 1982</td>
-           
-            <td>6300$</td>
-           
-            </tr>
-            <tr>
-       
-                <td>6</td>
-               
-                <td>Nadia</td>
-               
-                <td>leBon</td>
-               
-                <td>1368</td>
-               
-                <td>18 Mar 1982</td>
-               
-                <td>6300$</td>
-               
-                
-                   
-       -->
       
-       
         </table>
 
         <div class="divjouter">
-         
-            <button class="btnajouter"  id="modal-btn">Ajouter utilisateur</button>
+            <button class="btnajouter" onclick="afficher()">Ajouter utilisateur</button>
         </div>
+</section>
+  
 
-
-    
-     <!-- <button id="modal-btn" class="button">Click Here</button> -->
-
-  <div id="my-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h1>Ajouter d'utilisateurs</h1>
+  <section class="Modal">
+    <div id="div" class="invisible">
+      <div>
+        <h1 class="titremodal">Ajout d'utilisateurs</h1>
       </div>
-      <div class="modal-body">
-     
-        <div class="divinput">
-            
-                <label for="nom">Nom</label> 
-                <input type="text" id="nom">
-
-                <label for="prenom">Prenom</label> 
-                <input type="text" id="prenom">
-                
-                <label for="etat">Etat</label> 
-                <select name="etat" id="etat">
-                    <option></option>
-                    <option value="En validation">En validation</option>
-                    <option value="Validé">Validé</option>
-                    <option value="Rejeté">Rejeté</option>
-                </select>
+      <div class="div1">
+        <div>
+          <label>Nom</label>
+          <div><input type="text"  id="nom" /></div>
         </div>
-         
-        <div class="divinput">
-            <label for="nomu">Nom d'utilisateur</label> 
-            <input type="text" id="nomu">
-
-            <label for="datec">Date de création</label> 
-            <input type="date" id="datec">
+        <div>
+          <label>Prenom</label>
+          <div><input type="text"  id="prenom" /></div>
         </div>
-       
-        <div class="divinput">
-            <label for="matricule">Matricule</label> 
-            <input type="text" id="matricule">
+        <div>
+          <label>Etat</label>
+          <div>
+            <select id="etat">
+              <option></option>
+              <option value="En validation">En validation</option>
+              <option value="Validé">Validé</option>
+              <option value="Rejeté">Rejeté</option>
+          </select>
+          </div>
         </div>
-       
       </div>
-      <div class="modal-footer">
-        <button class="btnenregistrer">Enregistrer</button>
+
+      <div class="div2">
+        <div>
+          <label>Nom d'utilisatuer</label>
+          <div>
+            <input type="text"  id="nomu" />
+          </div>
+        </div>
+        <div>
+          <label>Date de creation</label>
+          <div><input type="date"  id="datec" /></div>
+        </div>
+      </div>
+      <div class="div2">
+        <div>
+          <label>Matricule</label>
+          <div><input type="text"  id="matricule" /></div>
+        </div>
+      </div>
+      <div class="btnenregistrer">
+        <button onclick="ajouter()">Enregistrer</button>
       </div>
     </div>
-  </div>
-
+  </section>
 
     <script src="./js/main.js"></script>
 </body>
